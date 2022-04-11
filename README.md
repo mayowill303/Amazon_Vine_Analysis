@@ -25,3 +25,6 @@ The extracted dataset is transformed into four DataFrames with the correct colum
 ![extracted_dataset-4](https://user-images.githubusercontent.com/96395120/162639823-ad03b9e8-bf21-46bc-89c2-768843a3d724.png)
 
 All four DataFrames are loaded into their respective tables in pgAdmin (10 pt)
+
+![Respective Tables](https://user-images.githubusercontent.com/96395120/162652359-feff6824-cce6-41a8-8eb4-6acedea79e42.png)
+
