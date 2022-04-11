@@ -8,9 +8,7 @@
 - Complete an analysis of an Amazon customer review.
 
 ## Summary
-In this project, we have access to approximately 50 datasets. Each one contains reviews of a specific product, from clothing apparel to wireless products. I chose home improvement revidws and used PySpark to perform the ETL process to extract the reviews, transform the data about the reviews, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Next, I used PySpark, Pandas, or SQL to determine if there is any bias toward favorable reviews from Vine members in the dataset. Then, I wrote a summary of the analysis for Jennifer to submit to the SellBy stakeholders.
-
-### Results
+In this project, we have access to approximately 50 datasets. Each one contains reviews of a specific product, from clothing apparel to wireless products. I chose home improvement reviews and used PySpark to perform the ETL process to extract the reviews, transform the data about the reviews, connect to an AWS RDS instance, and load the transformed data into pgAdmin. Next, I used PySpark, Pandas, or SQL to determine if there is any bias toward favorable reviews from Vine members in the dataset. Then, I wrote a summary of the analysis for Jennifer to submit to the SellBy stakeholders.
 
 #### Deliverable 1 Requirements
 An Amazon Review dataset is extracted as a DataFrame (10 pt)
@@ -29,6 +27,7 @@ All four DataFrames are loaded into their respective tables in pgAdmin (10 pt)
 ![Respective Tables](https://user-images.githubusercontent.com/96395120/162652359-feff6824-cce6-41a8-8eb4-6acedea79e42.png)
 
 #### Deliverable 2: Determine Bias of Vine Reviews
+
 Using knowledge of PySpark, Pandas, or SQL, we determine if there is any bias towards reviews that were written as part of the Vine program. For this analysis, we determine if having a paid Vine review makes a difference in the percentage of 5-star reviews.
 
 DataFrame or table for the vine_table data using one of three methods above (5 pt)
@@ -54,3 +53,20 @@ The data is filtered to create a DataFrame or table where there isn’t a Vine r
 The total number of reviews, the number of 5-star reviews, and the percentage 5-star reviews are calculated for all Vine and non-Vine reviews (15 pt)
 
 ![reviews-breakdown](https://user-images.githubusercontent.com/96395120/162661288-2c584a40-f673-41a5-8790-dd8146fb8414.png)
+
+#### Deliverable 3: A Written Report on the Analysis (20 points)
+
+##### Overview of the analysis of the Vine program:
+
+The purpose of the home improvement reviews analysis is to determine if there is any bias in reviews from Vine members.
+
+##### Results
+
+- There are 266 total paid vine reviews and 38829 non-paid vine reviews.
+- 125 paid vine reviews were 5 stars and 18246 were non-paid vine reviews were 5 stars.
+- 47% of vine reviews were 5 stars and 47% of non-paid vine reviews were also 5 stars. 
+
+##### Summary:
+
+With 47% of vine and non vine reviews being equally distributed I did not find any bias in the results.
+I believe an additional analysis that could be conducted would be based on the statistical distribution (standard deviation, regression, mean, median or mode) of the vine vs non-vine reviews.
